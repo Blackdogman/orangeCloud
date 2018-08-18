@@ -4,3 +4,10 @@ server:
 spring:
   application:
     name: orangecloud-api
+  profiles:
+    active: dev
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
+    use-column-label: true
+  mapper-locations: classpath:/mapper/*.xml

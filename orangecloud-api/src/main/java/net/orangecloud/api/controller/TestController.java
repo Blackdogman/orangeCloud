@@ -1,4 +1,4 @@
-package net.orangecloud.api.restController;
+package net.orangecloud.api.controller;
 
 import net.orangecloud.common.constants.WeekDaysConstants;
 import org.springframework.beans.factory.annotation.Autowired;
