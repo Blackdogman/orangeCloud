@@ -11,6 +11,7 @@
     <modules>
         <module>orangecloud-api</module>
         <module>orangecloud-common</module>
+        <module>orangecloud-web</module>
     </modules>
 
     <parent>
