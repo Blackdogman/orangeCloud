@@ -9,13 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>orangecloud-api</artifactId>
+    <artifactId>orangecloud-common</artifactId>
 
-    <dependencies>
-        <dependency>
-            <groupId>net.orangepeels</groupId>
-            <artifactId>orangecloud-common</artifactId>
-            <version>1.0-SNAPSHOT</version>
-        </dependency>
-    </dependencies>
+
 </project>
