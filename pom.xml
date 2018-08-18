@@ -6,7 +6,11 @@
 
     <groupId>net.orangepeels</groupId>
     <artifactId>orangecloud</artifactId>
+    <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>orangecloud-api</module>
+    </modules>
 
     <parent>
         <groupId>org.springframework.boot</groupId>
