@@ -1,4 +1,4 @@
-package net.orangepeels.common.constants;
+package net.orangecloud.common.constants;
 
 import org.springframework.stereotype.Component;
 

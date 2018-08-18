@@ -1,6 +1,7 @@
 package net.orangecloud.api.restController;
 
-import net.orangepeels.common.constants.WeekDaysConstants;
+import net.orangecloud.common.constants.WeekDaysConstants;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -9,14 +10,16 @@ import org.springframework.web.bind.annotation.RestController;
 public class TestController {
     private final WeekDaysConstants weekDaysConstants;
 
-    public TestController() {
-        this.weekDaysConstants = new WeekDaysConstants();
+    @Autowired
+    public TestController(WeekDaysConstants weekDaysConstants) {
+        this.weekDaysConstants = weekDaysConstants;
     }
 
     @RequestMapping("/getweekdaycode/{weekdayname}/{whatCode}")
     public Integer getWeekDayCode(@PathVariable("weekdayname") String weekdayname, @PathVariable("whatCode") String whatCode){
         System.err.println("weekDayName: " + weekdayname);
         System.err.println("whatCode: " + whatCode);
+        System.err.println("weekDaysConstants.SUNDAY: " + weekDaysConstants.SUNDAY);
         return weekDaysConstants.SATURDAY;
     }
 }
