@@ -12,6 +12,7 @@
         <module>orangecloud-api</module>
         <module>orangecloud-common</module>
         <module>orangecloud-web</module>
+        <module>orangecloud-eureka</module>
     </modules>
 
     <parent>
@@ -44,6 +45,13 @@
     </dependencies>
 
     <build>
+        <finalName>orangecloud</finalName>
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+                <filtering>true</filtering>
+            </resource>
+        </resources>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -51,6 +59,9 @@
                 <version>2.6</version>
                 <configuration>
                     <includeEmptyDirs>true</includeEmptyDirs>
+                    <delimiters>
+                        <delimiter>$</delimiter>
+                    </delimiters>
                 </configuration>
             </plugin>
         </plugins>

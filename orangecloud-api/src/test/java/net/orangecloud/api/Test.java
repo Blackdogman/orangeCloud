@@ -14,6 +14,6 @@ public class Test {
 
     @org.junit.Test
     public void myBatisTest(){
-        System.out.println(blogMarkDownDao.findAll());
+
     }
 }

@@ -11,3 +11,17 @@ mybatis:
     map-underscore-to-camel-case: true
     use-column-label: true
   mapper-locations: classpath:/mapper/*.xml
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:2334/eureka/
+  instance:
+    instance-id: orangecloud-api:${server.port}
+    prefer-ip-address: true
+
+info:
+  app.name: ${spring.application.name}
+  company.name: orangepeels.net
+  build.artifactId: $project.artifactId$
+  build.version: $project.version$
