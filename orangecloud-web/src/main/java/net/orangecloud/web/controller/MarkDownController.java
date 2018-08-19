@@ -23,17 +23,17 @@ public class MarkDownController {
         this.restTemplate = restTemplate;
     }
 
-    @GetMapping("/web/blog/list")
+    @GetMapping("/blog/list")
     public List listBlog() {
         return restTemplate.getForObject(URL_PREFIX + "/blogmarkdown/list", List.class);
     }
 
-    @GetMapping("/web/blog/get/{id}")
+    @GetMapping("/blog/get/{id}")
     public BlogMarkDown getBlog(@PathVariable("id") String id){
         return restTemplate.getForObject(URL_PREFIX + "/blogmarkdown/get/" + id, BlogMarkDown.class);
     }
 
-    @GetMapping("/web/blog/discovery")
+    @GetMapping("/blog/discovery")
     public Object discovery(){
         return restTemplate.getForObject(URL_PREFIX + "/blogmarkdown/discovery", Object.class);
     }
