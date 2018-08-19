@@ -1,5 +1,5 @@
 server:
-  port: 2334
+  port: 2335
 
 spring:
   application:
@@ -7,9 +7,9 @@ spring:
 
 eureka:
   instance:
-    hostname: orangecloud1.net
+    hostname: orangecloud2.net
   client:
     register-with-eureka: false
     fetch-registry: false
     service-url:
-      defaultZone: http://orangecloud2.net:2335/eureka/
+      defaultZone: http://orangecloud1.net:2334/eureka/

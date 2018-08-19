@@ -13,6 +13,8 @@
         <module>orangecloud-common</module>
         <module>orangecloud-web</module>
         <module>orangecloud-eureka</module>
+        <module>orangecloud-eureka2</module>
+        <module>orangecloud-api2</module>
     </modules>
 
     <parent>

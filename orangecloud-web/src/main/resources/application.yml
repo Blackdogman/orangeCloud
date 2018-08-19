@@ -7,17 +7,12 @@ server:
 eureka:
   client:
     service-url:
-      defaultZone: http://localhost:2334/eureka/
+      defaultZone: http://orangecloud1.net:2334/eureka/,http://orangecloud2.net:2335/eureka/
+
   instance:
     instance-id: orangecloud-web:${server.port}
     prefer-ip-address: true
 
-info:
-  app.name: ${spring.application.name}
-  company.name: orangepeels.net
-  build.artifactId: $project.artifactId$
-  build.version: $project.version$
-
 api:
   url:
-    prefix: http://127.0.0.1:2333
+    prefix: http://ORANGECLOUD-API
