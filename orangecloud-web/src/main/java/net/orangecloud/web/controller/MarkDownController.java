@@ -32,4 +32,9 @@ public class MarkDownController {
     public BlogMarkDown getBlog(@PathVariable("id") String id){
         return restTemplate.getForObject(URL_PREFIX + "/blogmarkdown/get/" + id, BlogMarkDown.class);
     }
+
+    @GetMapping("/web/blog/discovery")
+    public Object discovery(){
+        return restTemplate.getForObject(URL_PREFIX + "/blogmarkdown/discovery", Object.class);
+    }
 }
