@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="net.orangecloud.api.dao.BlogMarkDownDao">
+    <select id="findById" resultType="net.orangecloud.common.pojo.BlogMarkDown" parameterType="java.lang.String">
+        SELECT * FROM blog_markdown WHERE id = #{id}
+    </select>
+
+    <select id="findAll" resultType="net.orangecloud.common.pojo.BlogMarkDown">
+        SELECT * FROM blog_markdown WHERE 1=1
+    </select>
+</mapper>

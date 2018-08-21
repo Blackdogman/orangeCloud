@@ -15,6 +15,7 @@
         <module>orangecloud-eureka</module>
         <module>orangecloud-eureka2</module>
         <module>orangecloud-api2</module>
+        <module>orangecloud-hystrix</module>
     </modules>
 
     <parent>

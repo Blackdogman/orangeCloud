@@ -7,7 +7,8 @@
     - orangecloud-api2 服务生产者2，供服务消费者调用
     - orangecloud-common 一些通用方法或者变量的放置
     - orangecloud-eureka eureka服务注册器，注册服务，发现服务
-    - orangecloud-eureka eureka服务注册器2，注册服务，发现服务
+    - orangecloud-eureka2 eureka服务注册器2，注册服务，发现服务
+    - orangecloud-hystrix 添加了hystrix熔断器的服务生产者
     - orangecloud-web 服务的消费者
 ```
 #### 添加hosts 模拟多服务器负载均衡

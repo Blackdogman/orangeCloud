@@ -1,0 +1,27 @@
+server:
+  port: 2331
+
+spring:
+  application:
+    name: orangecloud-api
+  profiles:
+    active: dev
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
+    use-column-label: true
+  mapper-locations: classpath:/mapper/*.xml
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://orangecloud1.net:2334/eureka/,http://orangecloud2.net:2335/eureka/
+  instance:
+    instance-id: orangecloud-hystri:${server.port}
+    prefer-ip-address: true
+
+info:
+  app.name: ${spring.application.name}
+  company.name: orangepeels.net
+  build.artifactId: orangecloud-hystrix
+  build.version: 1.0-SNAPSHOT
