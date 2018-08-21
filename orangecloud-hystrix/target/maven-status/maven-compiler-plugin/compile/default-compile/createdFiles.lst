@@ -1,5 +1,5 @@
 net\orangecloud\api\controller\BlogMarkDownController.class
+net\orangecloud\api\HystrixApplicationBoot.class
 net\orangecloud\api\service\BlogMarkDownServiceImpl.class
 net\orangecloud\api\service\BlogMarkDownService.class
-net\orangecloud\api\ApiApplicationBoot2.class
 net\orangecloud\api\dao\BlogMarkDownDao.class
