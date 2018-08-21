@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 
 import java.util.List;
 
-@FeignClient(value = "http://ORANGECLOUD-API")
+@FeignClient(value = "http://ORANGECLOUD-API", fallbackFactory = BlogMarkDownClientServiceFallBack.class)
 public interface BlogMarkDownClientService {
 
     @GetMapping("/blogmarkdown/get/{id}")
