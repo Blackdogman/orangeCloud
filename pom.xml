@@ -16,6 +16,8 @@
         <module>orangecloud-eureka2</module>
         <module>orangecloud-api2</module>
         <module>orangecloud-hystrix</module>
+        <module>orangecloud-hystrix-dashboard</module>
+        <module>orangecloud-zuul-gateway</module>
     </modules>
 
     <parent>

@@ -1,0 +1,19 @@
+server:
+  port: 9527
+spring:
+  application:
+    name: orangecloud-zuul-gateway
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://orangecloud1.net:2334/eureka/,http://orangecloud2.net:2335/eureka/
+  instance:
+    instance-id: orangecloud-zuul-gateway:${server.port}
+    prefer-ip-address: true
+
+info:
+  app.name: ${spring.application.name}
+  company.name: orangepeels.net
+  build.artifactId: $project.artifactId$
+  build.version: $project.version$
