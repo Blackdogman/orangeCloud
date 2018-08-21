@@ -5,11 +5,13 @@
 - orangecloud 父容器
     - orangecloud-api 服务生产者，供服务消费者调用
     - orangecloud-api2 服务生产者2，供服务消费者调用
-    - orangecloud-common 一些通用方法或者变量的放置
+    - orangecloud-common 一些通用方法或者变量的放置, feign服务接口的注册
     - orangecloud-eureka eureka服务注册器，注册服务，发现服务
     - orangecloud-eureka2 eureka服务注册器2，注册服务，发现服务
     - orangecloud-hystrix 添加了hystrix熔断器的服务生产者
+    - orangecloud-hystrixdashboard 监控服务负载的控制面板
     - orangecloud-web 服务的消费者
+    - orangecloud-zuul-gateway zuul网关，注册进eureka中，可以通过网关来调用服务
 ```
 #### 添加hosts 模拟多服务器负载均衡
 ```

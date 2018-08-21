@@ -17,3 +17,10 @@ info:
   company.name: orangepeels.net
   build.artifactId: $project.artifactId$
   build.version: $project.version$
+
+zuul:
+  routes:
+    myapi.serviceId: orangecloud-api
+    myapi.path: /orangeapi/**
+  ignored-services:
+    - orangecloud-api
