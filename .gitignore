@@ -5,3 +5,5 @@
 /orangecloud-api/src/main/resources/application-dev.yml
 /orangecloud-api2/src/main/resources/application-dev.yml
 /orangecloud-hystrix/src/main/resources/application-dev.yml
+
+*/target/**
